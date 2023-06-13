@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/CRUD.css">
+    <title>CRUD</title>
+</head>
+<body>
+<div class="crud">
+        <h2>Our Products</h2>
+    <!-- Start Inputs -->
+    <div class="inputs">
+        <input  placeholder="title" type="text" id="title">
+        <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="transfer cost">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            <small id="total" onkeyup="getTotal()" type="number" id="total" placeholder="total"></small>
+        </div>
+        <input type="number" placeholder="count" id="count">
+        <input type="text" placeholder="Department" id="department">
+        <button id="sumbit">Create</button>
+    </div>
+    <!-- End Inputs -->
+
+    <!-- Start Outputs -->
+    <div id="deleteAll">
+
+    </div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>T-COST</th>
+            <th>DISCOUNT</th>
+            <th>TOTAL</th>
+            <th>DEPARTMENT</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
+        <tbody id="tbody">
+            <tr>
+                <td>1</td>
+                <td>samsung</td>
+                <td>1500</td>
+                <td>200</td>
+                <td>200</td>
+                <td>100</td>
+                <td>3100</td>
+                <td>Phone</td>
+                <td><button id="update">update</button></td>
+                <td><button id="delete">delete</button></td>            
+            </tr>           
+            </tr>
+        </tbody>
+    </table>
+    <!-- End Outputs -->
+</div>
+<script src="mean.js"></script>
+</body>
+
+</html>
